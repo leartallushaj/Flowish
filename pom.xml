@@ -95,9 +95,9 @@
 		</plugins>
 	</build>
 
-	<scm>
+	  <scm>
 		<developerConnection>scm:git@github.com:leartallushaj/Flowish.git</developerConnection>
-		<tag>HEAD</tag>
+	 	<tag>HEAD</tag>
 	</scm>
 
 </project>
