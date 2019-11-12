@@ -4,13 +4,32 @@ import guru.springframework.flowishshop.model.Seller;
 
 import java.util.Set;
 
-public interface SellerService {
+public interface SellerService extends CrudService<Seller,Long> {
 
     Seller findByFirstName(String firstName);
 
-    Seller findById(Long id);
+    @Override
+    default Set<Seller> findAll() {
+        return null;
+    }
 
-    Seller save(Seller seller);
+    @Override
+    default Seller findById(Long aLong) {
+        return null;
+    }
 
-    Set<Seller> findAll();
+    @Override
+    default Seller save(Seller object) {
+        return null;
+    }
+
+    @Override
+    default void delete(Seller object) {
+
+    }
+
+    @Override
+    default void deleteById(Long aLong) {
+
+    }
 }

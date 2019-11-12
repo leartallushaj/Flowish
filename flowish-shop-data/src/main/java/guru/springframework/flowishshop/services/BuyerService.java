@@ -4,12 +4,31 @@ import guru.springframework.flowishshop.model.Buyer;
 
 import java.util.Set;
 
-public interface BuyerService {
+public interface BuyerService extends CrudService<Buyer, Long> {
     Buyer findByLastName(String lastName);
 
-    Buyer findById(Long id);
+    @Override
+    default Set<Buyer> findAll() {
+        return null;
+    }
 
-    Buyer save(Buyer buyer);
+    @Override
+    default Buyer findById(Long aLong) {
+        return null;
+    }
 
-    Set<Buyer> findAll();
+    @Override
+    default Buyer save(Buyer object) {
+        return null;
+    }
+
+    @Override
+    default void delete(Buyer object) {
+
+    }
+
+    @Override
+    default void deleteById(Long aLong) {
+
+    }
 }

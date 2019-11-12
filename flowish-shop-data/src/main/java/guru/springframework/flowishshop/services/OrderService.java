@@ -4,11 +4,30 @@ import guru.springframework.flowishshop.model.Order;
 
 import java.util.Set;
 
-public interface OrderService {
+public interface OrderService extends CrudService<Order,Long>{
 
-    Order findById(Long id);
+    @Override
+    default Set<Order> findAll() {
+        return null;
+    }
 
-    Order save(Order order);
+    @Override
+    default Order findById(Long aLong) {
+        return null;
+    }
 
-    Set<Order> findAll();
+    @Override
+    default Order save(Order object) {
+        return null;
+    }
+
+    @Override
+    default void delete(Order object) {
+
+    }
+
+    @Override
+    default void deleteById(Long aLong) {
+
+    }
 }
