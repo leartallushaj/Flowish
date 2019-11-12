@@ -2,7 +2,7 @@ package guru.springframework.flowishshop.model;
 
 import java.time.LocalDate;
 
-public class Order {
+public class Order extends BaseEntity {
 
     private OrderType orderType;
     private Buyer buyer;
