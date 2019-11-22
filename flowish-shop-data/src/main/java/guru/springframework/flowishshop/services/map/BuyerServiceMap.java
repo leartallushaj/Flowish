@@ -1,11 +1,16 @@
 package guru.springframework.flowishshop.services.map;
 
 import guru.springframework.flowishshop.model.Buyer;
-import guru.springframework.flowishshop.services.CrudService;
+import guru.springframework.flowishshop.services.BuyerService;
 
 import java.util.Set;
 
-public class BuyerServiceMap extends AbstractMapService<Buyer, Long> implements CrudService<Buyer, Long> {
+public class BuyerServiceMap extends AbstractMapService<Buyer, Long> implements BuyerService {
+
+    @Override
+    public Buyer findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Buyer> findAll() {
@@ -30,7 +35,7 @@ public class BuyerServiceMap extends AbstractMapService<Buyer, Long> implements 
 
     @Override
     public void deleteById(Long id) {
-     super.findById(id);
+     super.deleteById(id);
 
     }
 }
