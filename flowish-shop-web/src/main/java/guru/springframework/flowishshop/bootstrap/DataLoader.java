@@ -4,8 +4,6 @@ import guru.springframework.flowishshop.model.Buyer;
 import guru.springframework.flowishshop.model.Seller;
 import guru.springframework.flowishshop.services.BuyerService;
 import guru.springframework.flowishshop.services.SellerService;
-import guru.springframework.flowishshop.services.map.BuyerServiceMap;
-import guru.springframework.flowishshop.services.map.SellerServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final BuyerService buyerService;
     private final SellerService sellerService;
 
-    public DataLoader(){
-       buyerService = new BuyerServiceMap();
-       sellerService = new SellerServiceMap();
+    public DataLoader(BuyerService buyerService, SellerService sellerService){
+        this.buyerService = buyerService;
+        this.sellerService = sellerService;
     }
     @Override
     public void run(String... args) throws Exception {

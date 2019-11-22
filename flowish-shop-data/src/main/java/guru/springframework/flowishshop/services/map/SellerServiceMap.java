@@ -2,9 +2,11 @@ package guru.springframework.flowishshop.services.map;
 
 import guru.springframework.flowishshop.model.Seller;
 import guru.springframework.flowishshop.services.SellerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class SellerServiceMap extends AbstractMapService<Seller, Long> implements SellerService {
 
     @Override
