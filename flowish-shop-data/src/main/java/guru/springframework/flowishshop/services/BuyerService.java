@@ -9,7 +9,7 @@ public interface BuyerService extends CrudService<Buyer, Long> {
 
     @Override
     default Set<Buyer> findAll() {
-        return null;
+        return this.findAll();
     }
 
     @Override

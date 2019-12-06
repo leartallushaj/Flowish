@@ -5,6 +5,23 @@
     <title>Sellers Index  Page</title>
 </head>
 <body>
-<h1 th:text="'Sellers Index Page'">Sellers Index Page</h1>
+<h1 th:text="'List of Sellers'">Sellers List</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="seller : ${sellers}">
+        <td th:text="${seller.id}">1</td>
+        <td th:text="${seller.firstName}">Joe</td>
+        <td th:text="${seller.lastName">Buck</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

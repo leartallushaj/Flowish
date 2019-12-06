@@ -51,6 +51,6 @@ public class DataLoader implements CommandLineRunner {
 
         sellerService.save(seller2);
 
-        System.out.println("Loaded Sellers");
+        System.out.println("Loaded sellers...");
     }
 }
