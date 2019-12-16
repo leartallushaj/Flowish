@@ -26,7 +26,7 @@ public class BuyerServiceMap extends AbstractMapService<Buyer, Long> implements 
 
     @Override
     public Buyer save(Buyer object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

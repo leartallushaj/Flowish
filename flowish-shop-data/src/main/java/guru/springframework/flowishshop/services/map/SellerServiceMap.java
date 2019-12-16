@@ -26,7 +26,7 @@ public class SellerServiceMap extends AbstractMapService<Seller, Long> implement
 
     @Override
     public Seller save(Seller object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override

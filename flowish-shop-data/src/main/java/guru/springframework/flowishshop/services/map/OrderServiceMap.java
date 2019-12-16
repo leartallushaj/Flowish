@@ -21,7 +21,7 @@ public class OrderServiceMap extends AbstractMapService<Order, Long> implements 
 
     @Override
     public Order save(Order object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override

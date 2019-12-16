@@ -21,14 +21,12 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Buyer buyer1 = new Buyer();
-        buyer1.setId(1L);
         buyer1.setFirstName("Leart");
         buyer1.setLastName("Allushaj");
 
         buyerService.save(buyer1);
 
         Buyer buyer2 = new Buyer();
-        buyer2.setId(2L);
         buyer2.setFirstName("Michael");
         buyer2.setLastName("Weston");
 
@@ -37,15 +35,12 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Loaded buyers...");
 
         Seller seller1 = new Seller();
-        seller1.setId(1L);
         seller1.setFirstName("Valona");
         seller1.setFirstName("Shop");
 
         sellerService.save(seller1);
 
         Seller seller2 = new Seller();
-
-        seller2.setId(2L);
         seller2.setFirstName("Tirana");
         seller2.setLastName("Shop");
 
