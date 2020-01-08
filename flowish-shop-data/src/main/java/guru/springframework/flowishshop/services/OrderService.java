@@ -27,7 +27,7 @@ public interface OrderService extends CrudService<Order,Long>{
     }
 
     @Override
-    default void deleteById(Long aLong) {
+    default void deleteById(Long Long) {
 
     }
 }
